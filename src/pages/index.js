@@ -5,8 +5,6 @@ import Link from 'next/link';
 // SSG
 export const getStaticProps = async() => {
   const data = await client.get({ endpoint: "blog" });
-  console.log(data);
-  console.log(data);
   return {
     props: {
       blog: data.contents,
